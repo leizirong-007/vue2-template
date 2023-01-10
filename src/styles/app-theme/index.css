@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+:root {
+  /* 主题 */
+  --theme-primary-color: #409EFF;
+  --theme-primary-color-1: rgba(64, 158, 255, 0.8);
+  --theme-primary-color-2: rgba(64, 158, 255, 0.6);
+  --theme-primary-color-3: rgba(64, 158, 255, 0.4);
+  --theme-primary-color-4: rgba(64, 158, 255, 0.2);
+  /* 辅助 */
+  --theme-foil-success: #67C23A;
+  --theme-foil-warning: #E6A23C;
+  --theme-foil-danger: #F56C6C;
+  --theme-foil-info: #909399;
+  /* 圆角 */
+  --theme-border-radius-base: 4px;
+  --theme-border-radius-small: 2px;
+  --theme-border-radius-round: 20px;
+  /* 文字大小 */
+  --theme-color-size-text: 14px;
+  --theme-color-size-title-1: 16px;
+  --theme-color-size-title-2: 20px;
+  /* 文字粗细 */
+  --theme-color-weight-text: 400;
+  --theme-color-weight-title: 600;
+
+  /* 阴影 */
+  --el-box-shadow: 0px 12px 32px 4px rgba(0, 0, 0, .36), 0px 8px 20px rgba(0, 0, 0, .72);
+  --el-box-shadow-light: 0px 0px 12px rgba(0, 0, 0, .72);
+  --el-box-shadow-lighter: 0px 0px 6px rgba(0, 0, 0, .72);
+  --el-box-shadow-dark: 0px 16px 48px 16px rgba(0, 0, 0, .72), 0px 12px 32px #000000, 0px 8px 16px -8px #000000;
+}
+
+/*  初始化样式 */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none !important;
+  box-sizing: border-box;
+  position: relative;
+  /*使字体渲染更顺滑*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  /* 设置所有元素隐藏滚动条 */
+
+}
+
+* ::-webkit-scrollbar {
+  width: 10px;
+  height: 6px;
+  display: none;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: var(--theme-color-size-text);
+  font-weight: var(--theme-color-weight-text);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 14px;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
